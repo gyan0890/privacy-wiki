@@ -1,0 +1,10 @@
+# MkDocs build output — rebuilt by GitHub Actions, don't commit
+site/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/

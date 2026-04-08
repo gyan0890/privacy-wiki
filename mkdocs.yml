@@ -1,0 +1,98 @@
+site_name: Privacy Wiki
+site_description: A knowledge base on blockchain privacy technologies, cryptographic primitives, privacy coins, and compliance frameworks.
+site_author: Gyan
+docs_dir: wiki
+site_dir: site
+
+hooks:
+  - hooks/wikilinks.py
+
+theme:
+  name: material
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.tabs           # top-level sections as tabs
+    - navigation.tabs.sticky    # tabs stay visible while scrolling
+    - navigation.sections       # expand sections in sidebar
+    - navigation.expand         # auto-expand active section
+    - navigation.top            # back-to-top button
+    - navigation.footer         # prev/next page links at bottom
+    - search.suggest            # search autocomplete
+    - search.highlight          # highlight search terms on page
+    - content.tooltips          # hover tooltips on links
+    - toc.follow                # table of contents highlights active heading
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang: en
+
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
+      title: On this page
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - def_list
+  - footnotes
+
+nav:
+  - Home: index.md
+  - Concepts:
+    - Zero-Knowledge Proofs: concepts/zero-knowledge-proofs.md
+    - zk-SNARKs: concepts/zk-snarks.md
+    - Halo Proving System: concepts/halo-proving-system.md
+    - Privacy vs. Compliance: concepts/privacy-vs-compliance.md
+    - Fungibility: concepts/fungibility.md
+    - Cryptographic Primitives: concepts/cryptographic-primitives.md
+  - Privacy Coins:
+    - Overview: coins/privacy-coins-overview.md
+    - Zcash (ZEC): coins/zcash.md
+    - Monero (XMR): coins/monero.md
+    - Bitcoin's Privacy Limitations: coins/bitcoin-privacy.md
+  - Protocols:
+    - Aztec Network: protocols/aztec-network.md
+    - Privacy Pools: protocols/privacy-pools.md
+    - Railgun: protocols/railgun.md
+    - Iron Fish: protocols/iron-fish.md
+  - Chains:
+    - Starknet: chains/starknet.md
+    - Penumbra: chains/penumbra.md
+    - Secret Network: chains/secret-network.md
+  - Research Papers:
+    - Shielded CSV: research/shielded-csv.md
+    - PRIVADA: research/privada.md
+    - Image Encryption: research/image-encryption.md
+    - Deniable FHE: research/deniable-fhe.md
+    - FLOSS: research/floss.md
+    - PlasmaBlind: research/plasmablind.md
+    - Privacy Blanket: research/privacy-blanket.md
+    - Random Robust Secret Sharing: research/random-robust-ss.md
+    - Zcash Protocol Spec: research/zcash-protocol-spec.md
+  - Source Index:
+    - Articles: sources/articles-index.md
+    - Papers: sources/papers-index.md
