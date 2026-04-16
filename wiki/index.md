@@ -2,7 +2,7 @@
 
 > A compiled knowledge base on blockchain privacy technologies, cryptographic primitives, privacy coins, and compliance frameworks. Built from ~70 source articles and 9 research papers.
 
-**Last compiled:** 2026-04-08
+**Last compiled:** 2026-04-16
 
 ---
 
@@ -55,6 +55,20 @@ Layer 1 and Layer 2 networks with privacy as a core design goal.
 | [[chains/penumbra]] | Penumbra: end-to-end encrypted DEX and IBC shielding |
 | [[chains/secret-network]] | Secret Network: private smart contracts via trusted execution |
 
+### ⬛ Starknet & STRK20
+Deep dive into Starknet's native privacy standard and its applications.
+
+| Article | Summary |
+|---|---|
+| [[chains/starknet]] | Starknet overview: architecture, ecosystem, performance |
+| [[chains/strk20]] | STRK20 protocol: note model, channels, encryption, compliance framework |
+| [[chains/starknet-use-cases]] | Core use cases: payroll, donations, OTC, AI agents, gaming |
+| [[chains/starknet-usecases-defi]] | DeFi: dark pools, sealed auctions, private perpetuals, lending, prediction markets |
+| [[chains/starknet-usecases-gaming]] | Gaming & governance: poker, blackjack, raffles, Dark Forest, encrypted voting |
+| [[chains/starknet-usecases-social]] | Identity & social: selective disclosure, private messaging, matchmaking, subscriptions |
+| [[chains/starknet-usecases-ai]] | AI & ML: encrypted RAG, autonomous agents, federated learning, private analytics |
+| [[chains/starknet-usecases-sensitive]] | Healthcare & biometrics: DNA matching, biometric login, patient analytics |
+
 ---
 
 ### 📄 Research Papers
@@ -71,6 +85,7 @@ Summaries of academic and technical papers in the collection.
 | [[research/privacy-blanket]] | Su et al. | Optimal noise in the shuffle model |
 | [[research/random-robust-ss]] | Ameri, Blocki | Random robust secret sharing + fuzzy auth |
 | [[research/zcash-protocol-spec]] | Hopwood, Bowe et al. | Official Zcash protocol specification |
+| [[research/scalable-compliant-privacy-starknet]] | Goldberg et al. (StarkWare) | STRK20: shielded notes, channels, compliance on Starknet |
 
 ---
 
@@ -88,7 +103,7 @@ One-paragraph digest of every raw source document.
 
 **The ZK Stack** — Zero-knowledge proofs are the mathematical engine behind nearly every modern privacy protocol. See [[concepts/zero-knowledge-proofs]], [[concepts/zk-snarks]], and [[concepts/halo-proving-system]].
 
-**Compliance vs. Anonymity** — The defining tension of 2025–2026. Projects like [[protocols/privacy-pools]], [[protocols/railgun]], and [[chains/starknet]] are building "compliance-aware" privacy. [[protocols/aztec-network]] and [[coins/zcash]] offer selective disclosure.
+**Compliance vs. Anonymity** — The defining tension of 2025–2026. Projects like [[protocols/privacy-pools]], [[protocols/railgun]], [[chains/starknet]], and [[chains/strk20]] are building "compliance-aware" privacy. [[protocols/aztec-network]] and [[coins/zcash]] offer selective disclosure.
 
 **Mandatory vs. Optional Privacy** — [[coins/monero]] mandates privacy for all users; [[coins/zcash]] makes it optional. The tradeoff affects anonymity set size and regulatory exposure.
 
@@ -106,7 +121,7 @@ One-paragraph digest of every raw source document.
 | Vitalik Buterin | Person | [[protocols/privacy-pools]], [[protocols/aztec-network]] |
 | Aztec Labs | Organization | [[protocols/aztec-network]] |
 | 0xbow | Organization | [[protocols/privacy-pools]] |
-| StarkWare | Organization | [[chains/starknet]] |
+| StarkWare | Organization | [[chains/starknet]], [[chains/strk20]], [[research/scalable-compliant-privacy-starknet]] |
 | Monero Research Lab | Organization | [[coins/monero]] |
 | Ethereum Foundation | Organization | [[protocols/privacy-pools]], [[chains/starknet]], [[research/plasmablind]] |
 | Chainalysis | Organization | [[coins/monero]], [[coins/privacy-coins-overview]] |

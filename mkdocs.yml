@@ -80,9 +80,17 @@ nav:
     - Railgun: protocols/railgun.md
     - Iron Fish: protocols/iron-fish.md
   - Chains:
-    - Starknet: chains/starknet.md
     - Penumbra: chains/penumbra.md
     - Secret Network: chains/secret-network.md
+  - Starknet:
+    - Overview: chains/starknet.md
+    - STRK20 Protocol: chains/strk20.md
+    - Core Use Cases: chains/starknet-use-cases.md
+    - "Use Cases: DeFi & Markets": chains/starknet-usecases-defi.md
+    - "Use Cases: Gaming & Governance": chains/starknet-usecases-gaming.md
+    - "Use Cases: Identity & Social": chains/starknet-usecases-social.md
+    - "Use Cases: AI & Machine Learning": chains/starknet-usecases-ai.md
+    - "Use Cases: Healthcare & Biometrics": chains/starknet-usecases-sensitive.md
   - Research Papers:
     - Shielded CSV: research/shielded-csv.md
     - PRIVADA: research/privada.md
@@ -93,6 +101,7 @@ nav:
     - Privacy Blanket: research/privacy-blanket.md
     - Random Robust Secret Sharing: research/random-robust-ss.md
     - Zcash Protocol Spec: research/zcash-protocol-spec.md
+    - Scalable Compliant Privacy (Starknet): research/scalable-compliant-privacy-starknet.md
   - Source Index:
     - Articles: sources/articles-index.md
     - Papers: sources/papers-index.md
