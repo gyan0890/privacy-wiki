@@ -35,6 +35,20 @@ jobs:
       - name: Build site
         run: mkdocs build --strict
 
+      - name: Encrypt site with StatiCrypt
+        env:
+          STATICRYPT_PASSWORD: ${{ secrets.STATICRYPT_PASSWORD }}
+        run: |
+          npm install -g staticrypt
+          cd site
+          find . -name "*.html" | xargs staticrypt \
+            --password "$STATICRYPT_PASSWORD" \
+            --directory . \
+            --config false \
+            --template-color-primary "#3f51b5" \
+            --template-color-secondary "#5c6bc0" \
+            --template-title "Privacy Wiki"
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
